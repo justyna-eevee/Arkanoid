@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 444}
   m_MaxSize: {x: 22012, y: 10022}
   vertical: 0
-  controlID: 136
+  controlID: 135
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,9 +392,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a42e0000
+      m_SelectedIDs: ca2d0000
       m_LastClickedID: 0
-      m_ExpandedIDs: a8d1ffff32d4ffffb0d4ffffded4ffff12e5ffffeee5ffff4eefffff18f0ffffa8f5ffff6efaffffa0faffffd0faffff6afbffff
+      m_ExpandedIDs: 96faffff6afbffffe6350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -495,20 +495,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Levels
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Levels
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Justyna\Desktop\FLAPPY PLANE
+  m_LastProjectPath: C:\Users\Justyna\Desktop\Arkanoid
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 642f0000
-    m_LastClickedID: 12132
-    m_ExpandedIDs: 00000000502d0000fe310000cc32000000ca9a3b
+    m_SelectedIDs: 16340000
+    m_LastClickedID: 13334
+    m_ExpandedIDs: 00000000442d000068310000fa32000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -536,7 +536,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000502d0000cc320000
+    m_ExpandedIDs: 00000000442d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -564,7 +564,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 00000000122e0000
+    m_ExpandedInstanceIDs: 00000000122e0000723100007c320000842d00009e2f00008c320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -709,9 +709,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.4859579, y: 1.6300001, z: -90.95235}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 3.4859579, y: 1.6300001, z: -90.95235}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -744,9 +744,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.2299414
+    m_Target: 22
     speed: 2
-    m_Value: 7.2299414
+    m_Value: 22
   m_Ortho:
     m_Target: 1
     speed: 2

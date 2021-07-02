@@ -68,7 +68,9 @@
     <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\DeadZone.cs" />
     <Compile Include="Assets\Scripts\EscapeHandler.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
+    <Compile Include="Assets\Scripts\LevelMenu.cs" />
     <Compile Include="Assets\Scripts\Paddle.cs" />
     <None Include="Assets\Levels\first_level.txt" />
     <None Include="Assets\Sprites\ui_pack\license.txt" />
@@ -78,6 +80,7 @@
     <None Include="Assets\Sprites\ui_pack\Spritesheet\redSheet.xml" />
     <None Include="Assets\Sprites\ui_pack\Spritesheet\greySheet.xml" />
     <None Include="Assets\Sprites\puzzle_pack\readme.txt" />
+    <None Include="Assets\Levels\test_level.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Justyna/Desktop/Arkanoid/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
