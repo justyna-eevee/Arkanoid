@@ -78,6 +78,7 @@
     <None Include="Assets\Sprites\ui_pack\Spritesheet\greenSheet.xml" />
     <None Include="Assets\Sprites\ui_pack\Spritesheet\blueSheet.xml" />
     <None Include="Assets\Sprites\ui_pack\Spritesheet\redSheet.xml" />
+    <None Include="Assets\Levels\second_level.txt" />
     <None Include="Assets\Sprites\ui_pack\Spritesheet\greySheet.xml" />
     <None Include="Assets\Sprites\puzzle_pack\readme.txt" />
     <None Include="Assets\Levels\test_level.txt" />

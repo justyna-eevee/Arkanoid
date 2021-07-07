@@ -14,7 +14,7 @@ using UnityEngine;
 public class Paddle : MonoBehaviour
 {
     [SerializeField]// atrybut pozwalający na widoczność zmiennej z poziomu inspektora
-    float Speed = 5f; // zmienna widoczna z inspektora, która umożliwia kontrolę nad prędkością paletki
+    float Speed = 200f; // zmienna widoczna z inspektora, która umożliwia kontrolę nad prędkością paletki
 
     Rigidbody2D Rigidbody; // element fizyczny do manipulowania prędkości
     

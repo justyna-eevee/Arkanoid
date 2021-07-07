@@ -8,32 +8,37 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    string levelName; // zmianna odpowiedzialna za aktualny poziom
     void Start()
     {
-        FindObjectOfType<LevelGenerator>().GenerateLevel("test_level"); // odszukanie skryptu LevelGenerator i wywołanie funkcji generującej poziom
-        StartCoroutine(CheckIfLevelendCoroutine()); // uruchamianie korutyny
-
-
+        levelName = PlayerPrefs.GetString("current_level"); // załadowanie aktualnego poziomu
+        FindObjectOfType<LevelGenerator>().GenerateLevel(levelName); // odszukanie skryptu LevelGenerator i wywołanie funkcji generującej poziom
+        StartCoroutine(LevelendCoroutine()); // uruchamianie korutyny
     }
 
-    IEnumerator CheckIfLevelendCoroutine()// funkcja wywołująca jako korutyna czyli co jakiś czas, musi coś zwracać
+    IEnumerator LevelendCoroutine()// funkcja wywołująca jako korutyna czyli co jakiś czas, musi coś zwracać
     {
         // będzie w pętli uruchamiać funkcję checkIfLevelEnd co sekundę
         while (true)
         {
-            CheckIfLevelEnd();
+            if (CheckIfLevelEnd())
+            {
+                ChangeScene(); 
+            }
             yield return new WaitForSeconds(1f);
         }
     }
 
-    void CheckIfLevelEnd() // funkcja sprawdzająca koniec rozgrywki
+    bool CheckIfLevelEnd() // funkcja sprawdzająca koniec rozgrywki
     {
-        var numbersOfBlocks = FindObjectsOfType<Block>().Length;//sprawdzenie czy ilość bloków na scenie wynosi zero
+        return FindObjectsOfType<Block>().Length == 0;//sprawdzenie czy ilość bloków na scenie wynosi zero
 
-        if (numbersOfBlocks == 0)
-        {
-            SceneManager.LoadScene("MenuScene");// przenoszenie gracza na scene menu
-        }
+    }
+
+    void ChangeScene() // funkcja zmieniająca scene i zmienianie ukonczenie poziomu
+    {
+        PlayerPrefs.SetInt(levelName + "_finished", 1); // zmiana koloru guzika jak poziom został ukończony
+        SceneManager.LoadScene("MenuScene");// przenoszenie gracza na scene menu
     }
 
 }

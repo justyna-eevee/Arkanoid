@@ -293,4 +293,5 @@ Assets\Scripts\DeadZone.cs
 Assets\Scripts\EscapeHandler.cs
 Assets\Scripts\GameManager.cs
 Assets\Scripts\LevelGenerator.cs
+Assets\Scripts\LevelMenu.cs
 Assets\Scripts\Paddle.cs
